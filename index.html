@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>B.E.A.M. CONSOLIDATED - Accueil</title>
+
+  <!-- Styles -->
+  <link rel="stylesheet" href="style.css">
+
+  <!-- Font Awesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="favicon.ico" type="image/x-icon">
+
+  <!-- SEO -->
+  <meta name="description" content="B.E.A.M. Synergy - Accueil : Expert BIM, Revit, Add-ins, Écoconception.">
+  <meta name="keywords" content="BIM, Revit, Add-ins, Alban BICAJ, B.E.A.M. Synergy, Écoconception, Efficacité Chantier">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link 
+    href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;600;700&family=Montserrat:wght@400;700&display=swap" 
+    rel="stylesheet"
+  >
+</head>
+
+<body>
+  <!-- Bouton menu mobile -->
+  <button id="mobile-menu-button" aria-label="Ouvrir le menu mobile">
+    <i class="fas fa-bars" aria-hidden="true"></i>
+  </button>
+
+  <!-- Navbar -->
+  <nav id="navbar" role="navigation" aria-label="Menu principal">
+    <div class="container nav-container">
+      <div class="logo-container">
+        <!-- Logo SVG -->
+        <svg width="80" height="80" viewBox="0 0 100 100">
+          <circle cx="50" cy="50" r="45" fill="#ffffff" stroke="#003049" stroke-width="4"/>
+          <text x="50" y="55" text-anchor="middle" font-size="14" fill="#E76F51" font-weight="700">BEAM</text>
+        </svg>
+      </div>
+      <!-- B.E.A.M. CONSOLIDATED -->
+      <span class="navbar-title">
+        B.E.A.M. CONSOLIDATED
+      </span>
+
+      <ul id="nav-links">
+        <li><a href="#welcome" class="active">Accueil</a></li>
+        <li><a href="#intro">À Propos</a></li>
+        <li><a href="#services">Services</a></li>
+        <li><a href="#revit">Add-ins Revit</a></li>
+        <li><a href="#contact">Contact</a></li>
+        <li><a href="#" id="open-login-modal">Se connecter</a></li>
+      </ul>
+    </div>
+  </nav>
+
+  <!-- Séparateur fixe sous la navbar -->
+  <div class="separator"></div>
+
+  <main class="main-content">
+    <!-- Bouton "Retour en haut" -->
+    <button id="back-to-top" aria-label="Revenir en haut" class="modern-fab">
+      <i class="fas fa-chevron-up" aria-hidden="true"></i>
+    </button>
+
+    <!-- Section Accueil -->
+    <section id="welcome" class="reveal" tabindex="-1" aria-labelledby="welcome-title">
+      <div class="banner">
+        <video 
+          id="background-video"
+          preload="auto"
+          autoplay
+          muted
+          loop
+          playsinline
+          poster="fallback.jpg"
+          aria-label="Vidéo d'illustration d'accueil"
+        >
+          <source src="video_accueil.mp4" type="video/mp4">
+          Votre navigateur ne supporte pas la vidéo en arrière-plan.
+        </video>
+        <div class="gradient-overlay"></div>
+        <div class="banner-content">
+          <h1 id="welcome-title">Ensemble, Dynamisons Votre BIM</h1>
+          <p class="banner-subtitle">
+            Accélérez vos projets avec une approche verte et rentable.
+            Je mets à votre service mon expertise BIM pour un résultat
+            précis, fluide et totalement personnalisé.
+          </p>
+          <div class="banner-buttons">
+            <a href="#services" class="button-primary">Mes Services</a>
+            <a href="#contact" class="button-secondary">Me Contacter</a>
+          </div>
+        </div>
+      </div>
+      <!-- Vague décorative -->
+      <div class="wave wave1"></div>
+    </section>
+
+    <!-- Section À Propos -->
+    <section id="intro" class="reveal">
+      <div class="container">
+        <h2>À Propos</h2>
+        <p class="section-intro">
+          Chez B.E.A.M. Consolidated, je ne me contente pas de “faire du BIM” : 
+          je crée une expérience sur-mesure, rentable et tournée vers un futur plus responsable. 
+          En tant qu’expert unique, je m’implique à 100% dans la réussite de votre projet, 
+          avec l’agilité et la réactivité qu’aucune grande structure ne peut offrir.
+        </p>
+        <div class="intro-grid">
+          <!-- Flip Card 1 -->
+          <div class="intro-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="fas fa-user"></i>
+                <h3>Qui suis-je ?</h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Je suis Alban BICAJ, à la fois fondateur et unique intervenant 
+                  de B.E.A.M. Consolidated. Avec plusieurs années d'expérience 
+                  dans le BIM, je vous offre une disponibilité et une proximité uniques.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flip Card 2 -->
+          <div class="intro-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="fas fa-eye"></i>
+                <h3>Ma Vision</h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  J’ambitionne de révolutionner le BIM en mêlant technologies avancées 
+                  et démarche écologique. Chaque projet est conçu pour allier innovation 
+                  et responsabilité, sans compromis.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flip Card 3 -->
+          <div class="intro-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="fas fa-leaf"></i>
+                <h3>Mon Engagement</h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Réduire l’impact environnemental passe par des plans et des modèles 
+                  <strong>ultra-précis</strong>, afin d’éviter les erreurs coûteuses 
+                  et le gaspillage de matériaux sur chantier.
+                </p>
+              </div>
+            </div>
+          </div>
+          <!-- Flip Card 4 -->
+          <div class="intro-card flip-card">
+            <div class="flip-card-inner">
+              <div class="flip-card-front">
+                <i class="fas fa-history"></i>
+                <h3>Mon Parcours</h3>
+              </div>
+              <div class="flip-card-back">
+                <p>
+                  Depuis 2024, j’explore en continu l’univers Revit, Dynamo et l’API C# 
+                  pour repousser les limites de la maquette numérique. Au fil des projets, 
+                  ma motivation reste la même : vous faire réussir.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- Vague décorative -->
+      <div class="wave wave2"></div>
+    </section>
+
+    <!-- Section Services -->
+    <section id="services" class="reveal">
+      <div class="container">
+        <h2>Services</h2>
+        <p class="section-intro">
+          Mon objectif ? Vous accompagner à chaque étape, de la conception à la finalisation, 
+          en offrant des solutions BIM hautement personnalisées et écologiquement responsables. 
+          En travaillant avec moi, vous profitez d’un interlocuteur unique, toujours prêt à 
+          adapter mes méthodes à vos contraintes et vos ambitions.
+        </p>
+        <div class="services-grid">
+          <!-- Service 1 : Modélisation BIM -->
+          <div class="service-card tilt-card">
+            <div class="service-card-inner">
+              <i class="fas fa-cube"></i>
+              <h3>Modélisation BIM</h3>
+              <ul>
+                <li>2D → 3D, Nuage de points → Maquette</li>
+                <li>Du LOD 100 au LOD 500, selon vos besoins</li>
+                <li>Gestion des phases (démolition, construction)</li>
+                <li>DOE numérique & documents techniques centralisés</li>
+                <li>Gains de précision pour réduire retards et coûts</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Service 2 : Gestion de Projet -->
+          <div class="service-card tilt-card">
+            <div class="service-card-inner">
+              <i class="fas fa-project-diagram"></i>
+              <h3>Gestion de Projet</h3>
+              <ul>
+                <li>Planification complète et phasage clair</li>
+                <li>Livrables à haute valeur ajoutée</li>
+                <li>Coordination inter-métiers (CVC, archi, structure…)</li>
+                <li>Prévention des erreurs et des surcoûts</li>
+                <li>Approche flexible pour s’adapter à votre timing</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Service 3 : API & Automatisations -->
+          <div class="service-card tilt-card">
+            <div class="service-card-inner">
+              <i class="fas fa-code"></i>
+              <h3>API & Automatisations</h3>
+              <ul>
+                <li>Scripts Dynamo & C# sur mesure</li>
+                <li>Add-ins Revit (menus, macros, flux de travail)</li>
+                <li>Intégration de données de performance</li>
+                <li>Automatisation des tâches répétitives</li>
+                <li>Économie de temps, réduction de l’erreur humaine</li>
+              </ul>
+            </div>
+          </div>
+          <!-- Service 4 : Conception Écoresponsable -->
+          <div class="service-card tilt-card">
+            <div class="service-card-inner">
+              <i class="fas fa-hand-holding-heart"></i>
+              <h3>Conception Écoresponsable</h3>
+              <ul>
+                <li>Plans ultra-précis = moins d’erreurs et de gaspillage</li>
+                <li>Réduction des surconsommations de matériaux</li>
+                <li>Vision globale pour limiter les retouches tardives</li>
+                <li>Optimisation chantier = gains de temps et d’argent</li>
+                <li>Amélioration de l’impact environnemental global</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="wave wave3"></div>
+    </section>
+
+    <!-- Section Add-ins Revit -->
+    <section id="revit" class="reveal">
+      <div class="container">
+        <h2>Add-ins Revit</h2>
+        <p class="section-intro">
+          Confiez-moi vos besoins d’automatisation dans Revit. 
+          Qu’il s’agisse de générer des feuilles en masse, de personnaliser 
+          vos nomenclatures ou d’optimiser la conception, 
+          je crée des add-ins sur mesure pour vous faire gagner un temps précieux 
+          et limiter les tâches répétitives.
+        </p>
+      </div>
+      <div class="wave wave4"></div>
+    </section>
+
+    <!-- Section Contact -->
+    <section id="contact" class="reveal">
+      <div class="container">
+        <h2>Contact</h2>
+        <p class="section-intro">
+          Vous ne recherchez pas simplement un prestataire BIM, 
+          mais un véritable <strong>partenaire</strong> investi ? 
+          Parlons ensemble de vos objectifs, de vos contraintes et de votre vision. 
+          En travaillant directement avec moi, vous bénéficiez d’une réactivité 
+          incomparable et d’un accompagnement taillé à votre mesure.
+        </p>
+        <div class="contact-grid">
+          <div class="contact-card" style="text-align: center;">
+            <i class="fas fa-envelope"></i>
+            <h3>Email</h3>
+            <p>info@bimconsolidated.com</p>
+          </div>
+          <div class="contact-card" style="text-align: center;">
+            <i class="fas fa-phone"></i>
+            <h3>Téléphone</h3>
+            <p>À venir</p>
+          </div>
+          <div class="contact-card" style="text-align: center;">
+            <i class="fas fa-map-marker-alt"></i>
+            <h3>Adresse</h3>
+            <p>À venir</p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Modale de Connexion -->
+      <div class="modal-bg" id="login-modal">
+        <div class="modal">
+          <button class="close-modal" id="close-login-modal" aria-label="Fermer la fenêtre de connexion">
+            <i class="fas fa-times"></i>
+          </button>
+          <h2>Connexion</h2>
+          <form id="login-form" class="login-form">
+            <div class="form-group">
+              <label for="login-email">Identifiant / Email :</label>
+              <input type="text" id="login-email" required />
+            </div>
+            <div class="form-group">
+              <label for="login-password">Mot de passe :</label>
+              <input type="password" id="login-password" required />
+            </div>
+            <button type="submit" class="button-primary">Se connecter</button>
+          </form>
+          <p class="form-note">
+            Mot de passe oublié ?
+            <a href="#">Réinitialiser</a>
+          </p>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer role="contentinfo">
+    <div class="container">
+      <p>&copy; 2024 B.E.A.M. CONSOLIDATED - Auto-Entrepreneur | Tous droits réservés</p>
+    </div>
+  </footer>
+
+  <!-- Scripts -->
+  <script src="app.js"></script>
+  <script src="menu.js"></script>
+  <!-- Script pour gérer le flip au clic (mobile / in-app browsers) -->
+  <script>
+    // Sélecteur sur tous les éléments .flip-card-inner
+    document.querySelectorAll('.flip-card-inner').forEach((inner) => {
+      // Au clic, on toggle la classe "flipped"
+      inner.addEventListener('click', () => {
+        inner.classList.toggle('flipped');
+      });
+    });
+  </script>
+</body>
+</html>
