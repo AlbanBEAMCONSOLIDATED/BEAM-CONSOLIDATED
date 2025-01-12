@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Logo B.E.A.M. - Demi-cercle dégradé proche du texte</title>
+  <!-- Lien vers la feuille de style logo.css -->
+  <link rel="stylesheet" href="logo.css">
+</head>
+<body>
+
+<!-- Conteneur global du "logo" -->
+<div class="beam-logo-container">
+  
+  <!-- Nom de l'entreprise (en haut) -->
+  <div class="beam-title-group">
+    <h1 class="beam-company-name">B.E.A.M.</h1>
+    <p class="beam-baseline">Building Energy and Asset Management</p>
+  </div>
+
+  <!-- Demi-cercle en dégradé, immédiatement en-dessous -->
+  <svg 
+    class="beam-gradient-ellipse"
+    viewBox="0 0 140 100"
+    aria-hidden="true"
+  >
+    <defs>
+      <!-- Dégradé orange brûlé -> blanc -->
+      <linearGradient id="sunGradient" x1="0" y1="0" x2="0" y2="1">
+        <stop offset="0%" stop-color="#E76F51" />
+        <stop offset="100%" stop-color="#ffffff" />
+      </linearGradient>
+    </defs>
+
+    <!-- Demi-cercle (ellipse) -->
+    <path
+      class="sun-ellipse"
+      d="
+        M20,80
+        A50,25 0 0,1 120,80
+        Z
+      "
+    />
+  </svg>
+
+</div>
+
+</body>
+</html>
